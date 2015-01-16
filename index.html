@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Just APE</title>
+
+<link rel="stylesheet" type="text/css" href="css/csshake.min.css">
+
+<link type="text/css" href="css/csshake.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+
+<link rel="stylesheet" type="text/css" href="css/style4.css" />
+<style type="text/css">
+
+html, body , .outer, .inner {
+    height:100%;
+    width:100%;
+    margin:0;
+} 
+body {
+}
+
+body {
+	background-attachment: scroll;
+	background-image: url(BG2-01.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+}
+</style>
+</head>
+<body>
+<table width="100%" height ="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center" valign="middle">
+		<div class="shake">
+			<a href="javascript:AlertIt();">
+				<img src="APE2.png" width="20%" height="20%" />
+			</a>
+		</div>
+        <a href="javascript:AlertIt();">
+				<p><strong></strong></p>
+			</a>
+        
+	</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+function AlertIt(){
+	//亂數
+	var myrandom = Math.round(Math.random()*2)
+	//一些白痴的話，用矩陣 Array
+	var messages = new Array()
+	messages[0] = "我是APE！"
+	messages[1] = "你也是APE嗎？"
+	messages[2] = "想成為APE嗎？"
+	//連結清單
+	var links = new Array()
+	links[0] = "http://en.wikipedia.org/wiki/Ape"
+	links[1] ="https://www.youtube.com/watch?v=fMa90PQsu-A"
+	links[2] ="https://www.youtube.com/watch?v=4dzQ9rk_AaQ"
+	links[3] = "https://www.youtube.com/?gl=TW&hl=zh-tw"
+	//呼叫確認視窗
+	var answer = confirm(messages[myrandom])
+	//重點來了，如果點「是」，就連去該變數所指的網站
+	if (answer){
+		window.location = links[myrandom]
+	} 
+}
+</script>
+
+
+        <div class="container">
+		
+            <div class="codrops-top">
+                                  
+                </span>
+                <div class="clr"></div>
+            </div>
+			
+			<header>
+				
+				<nav class="codrops-demos">
+					</nav>
+				
+				<div class="support-note"><!-- let's check browser support with modernizr -->
+					<!--span class="no-cssanimations">CSS animations are not supported in your browser</span-->
+					<span class="no-csstransforms">CSS transforms are not supported in your browser</span>
+					<!--span class="no-csstransforms3d">CSS 3D transforms are not supported in your browser</span-->
+					<span class="no-csstransitions">CSS transitions are not supported in your browser</span>
+					<span class="note-ie">Sorry, only modern browsers.</span>
+				</div>
+				
+			</header>
+            <section class="main">
+			
+				<ul class="ch-grid">
+<li>
+						<div class="ch-item ch-img-1">				
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+								  <div class="ch-info-front ch-img-1"></div>
+									<div class="ch-info-back">
+										<h3>A</h3>
+									
+									</div>	
+								</div>
+						  </div>
+						</div>
+					</li>
+                    <li>
+						<div class="ch-item ch-img-2">
+							<div class="ch-info-wrap">
+							  <div class="ch-info">
+									<div class="ch-info-front ch-img-2"></div>
+								  <div class="ch-info-back">
+									  <h3>p</h3>
+									  
+								  </div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item ch-img-3">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-3"></div>
+                                    <div class="ch-info-back">
+                                    <h3>e</h3>
+                                  
+								</div>
+							</div>
+					  </div>
+					</li>
+				</ul>
+
+</body>
+</html>
