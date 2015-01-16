@@ -53,22 +53,17 @@ body {
 
 <script type="text/javascript">
 function AlertIt(){
-	//亂數
 	var myrandom = Math.round(Math.random()*2)
-	//一些白痴的話，用矩陣 Array
 	var messages = new Array()
 	messages[0] = "我是APE！"
 	messages[1] = "你也是APE嗎？"
 	messages[2] = "想成為APE嗎？"
-	//連結清單
 	var links = new Array()
 	links[0] = "http://en.wikipedia.org/wiki/Ape"
 	links[1] ="https://www.youtube.com/watch?v=fMa90PQsu-A"
 	links[2] ="https://www.youtube.com/watch?v=4dzQ9rk_AaQ"
 	links[3] = "https://www.youtube.com/?gl=TW&hl=zh-tw"
-	//呼叫確認視窗
 	var answer = confirm(messages[myrandom])
-	//重點來了，如果點「是」，就連去該變數所指的網站
 	if (answer){
 		window.location = links[myrandom]
 	} 
